@@ -1,0 +1,16 @@
+<div class="jumbotron" bg-white text-center>
+    <h1 class="display-1">Corona Covid-19 Tracker</h1>
+    <app-summary-card [totalDeath]='totalDeath' [totalActiveCases]='totalActiveCases' [totalConfirmedCases]='totalConfirmedCases' [totalRecoveredCases]='totalRecoveredCases'></app-summary-card>
+
+</div>
+<div class="jumbotron p-3 my-3 bg-dark text-white">
+    <div class="row ">
+        <div class="col ">
+            <google-chart [data]='pieChart'></google-chart>
+        </div>
+        <div class="col ">
+            <google-chart [data]='pieChart'></google-chart>
+        </div>
+    </div>
+
+</div>

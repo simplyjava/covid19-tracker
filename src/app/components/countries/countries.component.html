@@ -1,0 +1,13 @@
+<div class="jumbotron" bg-white text-center>
+    <h1 class="display-4">Corona Covid-19 Tracker-Country</h1>
+
+
+    <div class="form-group">
+        <label for="countries">Countries</label>
+        <select class="form-control" id="countries" (change)='onChangeCountry($event.target.value)'>
+      <option *ngFor="let country of countries" [value]="country">{{country}}</option>
+    </select>
+    </div>
+
+</div>
+<app-summary-card [totalDeath]='countryData.deaths' [totalActiveCases]='countryData.activeCases' [totalConfirmedCases]='countryData.confirmedCases' [totalRecoveredCases]='countryData.recovered'></app-summary-card>
